@@ -67,7 +67,7 @@ const {onSent,recentPrompt,showResult,loading,resultData,setInput,Input} = useCo
                 <div>
                     <img src={assets.gallery_icon} alt="" />
                     <img src={assets.mic_icon} alt="" />
-                    <img onClick={() => onSent(Input)} src={assets.send_icon} alt="" />
+                    {Input?<img onClick={() => onSent(Input)} src={assets.send_icon} alt="" />:null}
 
                 </div>
             </div>
